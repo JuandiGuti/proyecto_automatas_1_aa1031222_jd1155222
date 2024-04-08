@@ -1,0 +1,11 @@
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\Debug\automatonApp.exe.config
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\Debug\automatonApp.exe
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\Debug\automatonApp.pdb
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.csproj.AssemblyReference.cache
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.home.resources
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.Properties.Resources.resources
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.csproj.GenerateResource.cache
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.csproj.CoreCompileInputs.cache
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.exe
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.pdb
+C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.dfa.resources
