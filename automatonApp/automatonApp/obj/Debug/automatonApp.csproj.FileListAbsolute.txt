@@ -9,3 +9,14 @@ C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMA
 C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.exe
 C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.pdb
 C:\Users\juand\Documents\00_UNIVERSIDAD\QUINTO CICLO\LENGUAJES FORMALES Y AUTOMATAS\PROYECTO\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.dfa.resources
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.csproj.AssemblyReference.cache
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.dfa.resources
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.home.resources
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.Properties.Resources.resources
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.csproj.GenerateResource.cache
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.csproj.CoreCompileInputs.cache
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\Debug\automatonApp.exe.config
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\Debug\automatonApp.exe
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\Debug\automatonApp.pdb
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.exe
+C:\Users\Altan\OneDrive\Escritorio\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\Debug\automatonApp.pdb

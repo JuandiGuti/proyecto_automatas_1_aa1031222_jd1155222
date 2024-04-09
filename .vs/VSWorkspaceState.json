@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\automatonApp",
+    "\\automatonApp\\automatonApp"
   ],
+  "SelectedNode": "\\automatonApp\\automatonApp\\home.cs",
   "PreviewInSolutionExplorer": false
 }
