@@ -83,6 +83,7 @@
 			this.Controls.Add(this.button1);
 			this.Name = "home";
 			this.Text = "Form1";
+			this.Load += new System.EventHandler(this.home_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

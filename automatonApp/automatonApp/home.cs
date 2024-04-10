@@ -33,5 +33,10 @@ namespace automatonApp
 		{
 			MessageBox.Show("NFA avalible until May 4.", "Comming Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
+
+		private void home_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

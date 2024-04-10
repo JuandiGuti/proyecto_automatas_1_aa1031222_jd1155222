@@ -67,6 +67,7 @@
 			this.Controls.Add(this.bt_open_file);
 			this.Name = "dfa";
 			this.Text = "dfa";
+			this.Load += new System.EventHandler(this.dfa_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
