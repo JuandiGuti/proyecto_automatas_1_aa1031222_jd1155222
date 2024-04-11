@@ -37,12 +37,25 @@ namespace automatonApp
 			final_states.Clear();
 			alphabet.Clear();
 			count = 0;
+			lb_status_automaton.Text = "Waiting for the automaton...";
+			tb_string.ReadOnly = true;
+			tb_string.Text = string.Empty;
+			bt_sent_string.Enabled = false;
+
 		}
 		//comprueba por medio de regex que lo leido en el archivo sea un numero
-		public bool number_comprobation(string line)
+		public bool number_comprobation(string line, bool transitionComprobation)
 		{
-			bool isNumber = Regex.IsMatch(line, "^[1-9]+$");
+			bool isNumber;
+			if (transitionComprobation){
+				isNumber = Regex.IsMatch(line, "^[0-9]+$");
+			}
+			else{
+				isNumber = Regex.IsMatch(line, "^[1-9]+$");
+
+			}
 			return isNumber;
+
 		}
 		//Agrega la variante del poder ser varios
 		public void number_comprobation_final_states(string line)
@@ -59,7 +72,7 @@ namespace automatonApp
 				actual_state = transitions[i].Split(',')[0].Trim();
 				transition = transitions[i].Split(',')[1].Trim();
 				state_to_reach = transitions[i].Split(',')[2].Trim();
-				if (actual_state.Equals("") || transition.Equals("") || state_to_reach.Equals(""))
+				if (actual_state.Equals("") || transition.Equals("") || state_to_reach.Equals("") || !number_comprobation(actual_state, true) || !number_comprobation(state_to_reach, true))
 				{
 					return false;
 				}
@@ -113,7 +126,7 @@ namespace automatonApp
 						{
 							switch(count){
 								case 0://numero de estados
-									if (number_comprobation(line))
+									if (number_comprobation(line, false))
 									{
 										num_states = int.Parse(line);
 										count++;
@@ -125,8 +138,16 @@ namespace automatonApp
 									}
 									break;
 								case 1://estado incial
-									initial_state = line;
-									count++;
+									if (number_comprobation(line, false))
+									{
+										initial_state = line;
+										count++;
+									}
+									else
+									{
+										MessageBox.Show("The file is not valid.", "Wrong Format", MessageBoxButtons.OK, MessageBoxIcon.Error);
+										return;
+									}
 									break;
 
 								case 2://estados finales
@@ -180,7 +201,10 @@ namespace automatonApp
 				MessageBox.Show("The number of transitions is inconsistent with the number of states.", "Transition / state error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
-			MessageBox.Show("Excelent", "Excelent", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			lb_status_automaton.Text = "Automaton has been Loaded correctly!";
+			tb_string.ReadOnly = false;
+			bt_sent_string.Enabled = true;
+
 		}
 
 		private void dfa_Load(object sender, EventArgs e)
