@@ -24,7 +24,7 @@ namespace automatonApp
 		public string initial_state;
 		public List<string> final_states = new List<string>();
 		public int count = 0;
-		public bool error = false;
+		public List<string> alphabet = new List<string>();
 
 		public dfa()
 		{
@@ -35,6 +35,7 @@ namespace automatonApp
 		{
 			transitions.Clear();
 			final_states.Clear();
+			alphabet.Clear();
 			count = 0;
 		}
 		//comprueba por medio de regex que lo leido en el archivo sea un numero
@@ -53,7 +54,7 @@ namespace automatonApp
 		{
 			string actual_state, transition, state_to_reach;
 
-			for (int i = 0; i < transitions.Count; i++)
+			for (int i = 0; i < transitions.Count-1; i++)
 			{
 				actual_state = transitions[i].Split(',')[0].Trim();
 				transition = transitions[i].Split(',')[1].Trim();
@@ -69,7 +70,7 @@ namespace automatonApp
 		public bool states_comprobation(List<string> transitions, string state)
 		{
 			string state_in_transition, state_in_transition2;
-			for (int i = 0; i < transitions.Count; i++ )			
+			for (int i = 0; i < transitions.Count -1; i++ )			
 			{
 				state_in_transition = transitions[i].Split(',')[0].Trim();
 				state_in_transition2 = transitions[i].Split(',')[2].Trim();
@@ -79,7 +80,18 @@ namespace automatonApp
 				}
 			}
 			return false;
+		}
+		public List<string> get_alphabet(List<string> transitions)
+		{
 
+			List<string> alphabet = new List<string>();
+			for (int i = 0; i < transitions.Count - 1; i++)
+			{
+				alphabet.Add(transitions[i].Split(',')[1].Trim());
+			}
+			HashSet<string> hashSet = new HashSet<string>(alphabet);
+			alphabet = hashSet.ToList();
+			return alphabet;
 		}
 
 		private void bt_open_file_Click(object sender, EventArgs e)
@@ -108,9 +120,8 @@ namespace automatonApp
 									}
 									else
 									{
-										restart();
-										error = true;
 										MessageBox.Show("The file is not valid.", "Wrong Format", MessageBoxButtons.OK, MessageBoxIcon.Error);
+										return;
 									}
 									break;
 								case 1://estado incial
@@ -126,9 +137,8 @@ namespace automatonApp
 									}
 									catch (Exception a)
 									{
-										restart();
-										error = true;
 										MessageBox.Show("The file is not valid." + "\n Error code: " + a, "Wrong Format", MessageBoxButtons.OK, MessageBoxIcon.Error);
+										return;
 									}
 									break;
 								default://transiciones
@@ -146,7 +156,31 @@ namespace automatonApp
 					Console.WriteLine(a.Message);
 				}
 			}
-			states_comprobation(transitions, initial_state);
+			if (!transitions_validations(transitions))
+			{
+				MessageBox.Show("The transitions in the file are not valid.", "Transition error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			if(!states_comprobation(transitions, initial_state))
+			{
+				MessageBox.Show("The initial state in the file is not valid.", "State error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			for (int i = 0; i < final_states.Count; i++)
+			{
+				if (!states_comprobation(transitions, final_states[i]))
+				{
+					MessageBox.Show("Some final state in the file is not valid.", "State error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return;
+				}
+			}
+			alphabet = get_alphabet(transitions);
+			if(transitions.Count != num_states* alphabet.Count)
+			{
+				MessageBox.Show("The number of transitions is inconsistent with the number of states.", "Transition / state error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			MessageBox.Show("Excelent", "Excelent", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		private void dfa_Load(object sender, EventArgs e)
