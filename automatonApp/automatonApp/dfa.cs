@@ -97,7 +97,6 @@ namespace automatonApp
 		public bool strings_validation(string initial_state, List<string> transitions, string word, List<string> final_states, List<string> alphabet)
 		{
 			string new_state = "";
-			bool transition_matches;
 
 			for (int i = 0; i < word.Length; i++)
 			{
@@ -133,10 +132,11 @@ namespace automatonApp
 			}
 			for(int x = 0; x < final_states.Count; x++)
 			{
-				if (!new_state.Equals(final_states[x]))
+				if (new_state.Equals(final_states[x]))
 				{
-					return false;
+					return true;
 				}
+				return false;
 			}			
 			return true;
 		}
@@ -265,7 +265,7 @@ namespace automatonApp
 
 		private void bt_sent_string_Click(object sender, EventArgs e)
 		{
-			if(strings_validation(initial_state, transitions, tb_string.Text, final_states, alphabet))
+			if(strings_validation(initial_state, transitions, tb_string.Text.Trim(), final_states, alphabet))
 			{
 				MessageBox.Show("The word is accepted", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 			}
@@ -273,6 +273,11 @@ namespace automatonApp
 			{
 				MessageBox.Show("The word is not accepted", "Incorrect", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 			}
+
+		}
+
+		private void tb_string_TextChanged(object sender, EventArgs e)
+		{
 
 		}
 	}
