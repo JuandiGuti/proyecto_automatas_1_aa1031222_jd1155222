@@ -15,7 +15,7 @@ using static System.Windows.Forms.AxHost;
 
 namespace automatonApp
 {
-	
+
 	public partial class dfa : Form
 	{
 		// Lista global para almacenar la informacion del archivo
@@ -47,10 +47,10 @@ namespace automatonApp
 		public bool number_comprobation(string line, bool transitionComprobation)
 		{
 			bool isNumber;
-			if (transitionComprobation){
+			if (transitionComprobation) {
 				isNumber = Regex.IsMatch(line, "^[0-9]+$");
 			}
-			else{
+			else {
 				isNumber = Regex.IsMatch(line, "^[1-9]+$");
 
 			}
@@ -67,7 +67,7 @@ namespace automatonApp
 		{
 			string actual_state, transition, state_to_reach;
 
-			for (int i = 0; i < transitions.Count-1; i++)
+			for (int i = 0; i < transitions.Count - 1; i++)
 			{
 				actual_state = transitions[i].Split(',')[0].Trim();
 				transition = transitions[i].Split(',')[1].Trim();
@@ -83,7 +83,7 @@ namespace automatonApp
 		public bool states_comprobation(List<string> transitions, string state)
 		{
 			string state_in_transition, state_in_transition2;
-			for (int i = 0; i < transitions.Count -1; i++ )			
+			for (int i = 0; i < transitions.Count - 1; i++)
 			{
 				state_in_transition = transitions[i].Split(',')[0].Trim();
 				state_in_transition2 = transitions[i].Split(',')[2].Trim();
@@ -93,6 +93,52 @@ namespace automatonApp
 				}
 			}
 			return false;
+		}
+		public bool strings_validation(string initial_state, List<string> transitions, string word, List<string> final_states, List<string> alphabet)
+		{
+			string new_state = "";
+			bool transition_matches;
+
+			for (int i = 0; i < word.Length; i++)
+			{
+				for (int j = 0;j < transitions.Count - 1; j++)
+				{
+					if (i == 0)
+					{
+						if (initial_state == transitions[j].Split(',')[0].Trim())
+						{
+							if (Convert.ToString(word[i]) == transitions[j].Split(',')[1].Trim())
+							{
+								new_state = transitions[j].Split(',')[2].Trim();
+								tb_results.Text = transitions[j] + "\n";
+								break;
+							}
+						}
+					}
+					else
+					{
+						if ((new_state == transitions[j].Split(',')[0].Trim()))
+						{
+							if (Convert.ToString(word[i]) == transitions[j].Split(',')[1].Trim())
+							{
+								new_state = transitions[j].Split(',')[2].Trim();
+								tb_results.Text = tb_results.Text + transitions[j] + "\n";
+								break;
+							}
+							
+						}
+					}
+				}
+
+			}
+			for(int x = 0; x < final_states.Count; x++)
+			{
+				if (!new_state.Equals(final_states[x]))
+				{
+					return false;
+				}
+			}			
+			return true;
 		}
 		public List<string> get_alphabet(List<string> transitions)
 		{
@@ -209,6 +255,24 @@ namespace automatonApp
 
 		private void dfa_Load(object sender, EventArgs e)
 		{
+
+		}
+
+		private void tb_results_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void bt_sent_string_Click(object sender, EventArgs e)
+		{
+			if(strings_validation(initial_state, transitions, tb_string.Text, final_states, alphabet))
+			{
+				MessageBox.Show("The word is accepted", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			}
+			else
+			{
+				MessageBox.Show("The word is not accepted", "Incorrect", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			}
 
 		}
 	}
