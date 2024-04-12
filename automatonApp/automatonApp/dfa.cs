@@ -109,7 +109,8 @@ namespace automatonApp
 							if (Convert.ToString(word[i]) == transitions[j].Split(',')[1].Trim())
 							{
 								new_state = transitions[j].Split(',')[2].Trim();
-								tb_results.Text = transitions[j] + "\n";
+								string tx = Convert.ToString(transitions[j]) + "\r\n";
+								tb_results.Text = tx;
 								break;
 							}
 						}
@@ -121,7 +122,8 @@ namespace automatonApp
 							if (Convert.ToString(word[i]) == transitions[j].Split(',')[1].Trim())
 							{
 								new_state = transitions[j].Split(',')[2].Trim();
-								tb_results.Text = tb_results.Text + transitions[j] + "\n";
+								string tx = Convert.ToString(tb_results.Text) + Convert.ToString(transitions[j]) + "\r\n";
+								tb_results.Text = tx;
 								break;
 							}
 							
@@ -279,6 +281,18 @@ namespace automatonApp
 		private void tb_string_TextChanged(object sender, EventArgs e)
 		{
 
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			// Crear una nueva instancia del segundo formulario
+			Form home = new home();
+
+			// Mostrar el segundo formulario
+			home.Show();
+
+			// Esconder y no cerrar debidio a que es el formulario principal
+			this.Hide();
 		}
 	}
 }
