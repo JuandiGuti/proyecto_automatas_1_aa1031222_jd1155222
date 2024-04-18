@@ -1,0 +1,13 @@
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\x64\test\automatonApp.exe.config
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\x64\test\automatonApp.exe
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.csproj.AssemblyReference.cache
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.dfa.resources
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.home.resources
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.Properties.Resources.resources
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.csproj.GenerateResource.cache
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.csproj.CoreCompileInputs.cache
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.exe
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\x64\test\automatonApp.exe.manifest
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\bin\x64\test\automatonApp.application
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.exe.manifest
+C:\Users\juand\Desktop\proyecto_automatas_1_aa1031222_jd1155222\automatonApp\automatonApp\obj\x64\test\automatonApp.application
