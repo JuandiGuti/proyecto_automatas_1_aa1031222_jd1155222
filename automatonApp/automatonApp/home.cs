@@ -31,8 +31,15 @@ namespace automatonApp
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("NFA avalible until May 4.", "Comming Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
-		}
+            // Crear una nueva instancia del segundo formulario
+            Form ndfa = new ndfa();
+
+            // Mostrar el segundo formulario
+            ndfa.Show();
+
+            // Esconder y no cerrar debidio a que es el formulario principal
+            this.Hide();
+        }
 
 		private void home_Load(object sender, EventArgs e)
 		{

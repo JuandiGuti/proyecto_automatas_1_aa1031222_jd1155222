@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\",
+  "WorkspaceRootPath": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|c:\\users\\altan\\onedrive\\escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonapp\\automatonapp\\dfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|c:\\users\\juand\\onedrive\\escritorio\\proyecto de lfa\\proyecto_automatas_1_aa1031222_jd1155222\\automatonapp\\automatonapp\\dfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|solutionrelative:automatonapp\\dfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonapp\\dfa.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|solutionrelative:automatonapp\\dfa.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+      "AbsoluteMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|c:\\users\\juand\\onedrive\\escritorio\\proyecto de lfa\\proyecto_automatas_1_aa1031222_jd1155222\\automatonapp\\automatonapp\\ndfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|solutionrelative:automatonapp\\ndfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonapp\\dfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|c:\\users\\juand\\onedrive\\escritorio\\proyecto de lfa\\proyecto_automatas_1_aa1031222_jd1155222\\automatonapp\\automatonapp\\ndfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|solutionrelative:automatonapp\\ndfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonapp\\dfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5291A843-52B6-4065-8253-5CE5FA654FC9}|automatonApp\\automatonApp.csproj|solutionrelative:automatonapp\\dfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,44 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dfa.resx",
-              "DocumentMoniker": "C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.resx",
-              "RelativeDocumentMoniker": "automatonApp\\dfa.resx",
-              "ToolTip": "C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.resx",
-              "RelativeToolTip": "automatonApp\\dfa.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-04-09T03:28:48.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dfa.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs",
-              "RelativeDocumentMoniker": "automatonApp\\dfa.cs",
-              "ToolTip": "C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs [Design]",
-              "RelativeToolTip": "automatonApp\\dfa.cs [Design]",
+              "Title": "ndfa.cs",
+              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\ndfa.cs",
+              "RelativeDocumentMoniker": "automatonApp\\ndfa.cs",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\ndfa.cs",
+              "RelativeToolTip": "automatonApp\\ndfa.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAgwDoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T03:27:49.925Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-08T03:11:05.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "dfa.cs",
-              "DocumentMoniker": "C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs",
+              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs",
               "RelativeDocumentMoniker": "automatonApp\\dfa.cs",
-              "ToolTip": "C:\\Users\\Altan\\OneDrive\\Escritorio\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs",
               "RelativeToolTip": "automatonApp\\dfa.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAUwIYAAAAEAAAA",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAQwI0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T03:27:49.951Z",
+              "WhenOpened": "2024-05-08T03:11:25.329Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ndfa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\ndfa.cs",
+              "RelativeDocumentMoniker": "automatonApp\\ndfa.cs",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\ndfa.cs [Design]",
+              "RelativeToolTip": "automatonApp\\ndfa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T03:04:35.288Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dfa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs",
+              "RelativeDocumentMoniker": "automatonApp\\dfa.cs",
+              "ToolTip": "C:\\Users\\juand\\OneDrive\\Escritorio\\Proyecto de LFA\\proyecto_automatas_1_aa1031222_jd1155222\\automatonApp\\automatonApp\\dfa.cs [Design]",
+              "RelativeToolTip": "automatonApp\\dfa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T03:27:49.925Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
