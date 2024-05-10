@@ -58,18 +58,10 @@ namespace automatonApp
             return alphabet;
         }
         //comprueba por medio de regex que lo leido en el archivo sea un numero
-        public bool number_comprobation(string line, bool transitionComprobation)
+        public bool number_comprobation(string line)
         {
             bool isNumber;
-            if (transitionComprobation)
-            {
-                isNumber = Regex.IsMatch(line, "^[0-9]+$");
-            }
-            else
-            {
-                isNumber = Regex.IsMatch(line, "^[1-9]+$");
-
-            }
+            isNumber = Regex.IsMatch(line, "^[0-9]+$");
             return isNumber;
 
         }
@@ -88,7 +80,7 @@ namespace automatonApp
                 actual_state = transitions[i].Split(',')[0].Trim();
                 transition = transitions[i].Split(',')[1].Trim();
                 state_to_reach = transitions[i].Split(',')[2].Trim();
-                if (actual_state.Equals("") || transition.Equals("") || state_to_reach.Equals("") || !number_comprobation(actual_state, true) || !number_comprobation(state_to_reach, true))
+                if (actual_state.Equals("") || transition.Equals("") || state_to_reach.Equals("") || !number_comprobation(actual_state) || !number_comprobation(state_to_reach))
                 {
                     return false;
                 }
@@ -133,7 +125,7 @@ namespace automatonApp
                             switch (count)
                             {
                                 case 0://numero de estados
-                                    if (number_comprobation(line, false))
+                                    if (number_comprobation(line))
                                     {
                                         num_states = int.Parse(line);
                                         count++;
@@ -145,7 +137,7 @@ namespace automatonApp
                                     }
                                     break;
                                 case 1://estado incial
-                                    if (number_comprobation(line, false))
+                                    if (number_comprobation(line))
                                     {
                                         initial_state = line;
                                         count++;
@@ -194,20 +186,7 @@ namespace automatonApp
                 MessageBox.Show("The initial state in the file is not valid.", "State error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            for (int i = 0; i < final_states.Count; i++)
-            {
-                if (!states_comprobation(transitions, final_states[i]))
-                {
-                    MessageBox.Show("Some final state in the file is not valid.", "State error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
             alphabet = get_alphabet(transitions);
-            if (transitions.Count != num_states * alphabet.Count)
-            {
-                MessageBox.Show("The number of transitions is inconsistent with the number of states.", "Transition / state error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             lb_status_automaton.Text = "Automaton has been Loaded correctly!";
             tb_string.ReadOnly = false;
             bt_sent_string.Enabled = true;
