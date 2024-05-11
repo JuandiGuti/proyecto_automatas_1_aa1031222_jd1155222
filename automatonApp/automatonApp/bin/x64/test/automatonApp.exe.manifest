@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="automatonApp.exe" size="20904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="automatonApp.exe" size="22440">
       <assemblyIdentity name="automatonApp" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>C60YDMSUvdEJPyaxaflqihVzKk2gPuTy1Ia6EhsYn9E=</dsig:DigestValue>
+        <dsig:DigestValue>oquxsNqSqCBUZjNFhpRrYruLzknqIcPcWo8BiLZgyPw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

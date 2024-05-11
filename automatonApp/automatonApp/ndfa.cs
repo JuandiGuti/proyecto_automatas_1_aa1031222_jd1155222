@@ -192,5 +192,70 @@ namespace automatonApp
             bt_sent_string.Enabled = true;
 
         }
-    }
+
+		private void bt_sent_string_Click(object sender, EventArgs e)
+		{
+            tb_results.Text = string.Empty;
+			if (strings_validation(initial_state, transitions, tb_string.Text.Trim(), final_states, alphabet))
+			{
+				MessageBox.Show("The word is accepted", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			}
+			else
+			{
+				MessageBox.Show("The word is not accepted", "Incorrect", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			}
+		}
+		public bool strings_validation(string initial_state, List<string> transitions, string word, List<string> final_states, List<string> alphabet)
+		{
+			HashSet<string> current_states = new HashSet<string>();
+			current_states.Add(initial_state);
+			//current_states = epsilon_closure(); FALTA METODO EPSILON
+
+			// Procesamos cada caracter de la palabra
+			foreach (char symbol in word)
+			{
+				HashSet<string> next_states = new HashSet<string>();
+				foreach (string state in current_states)
+				{
+					// Recorremos todas las transiciones para encontrar aquellas que corresponden al estado actual y al símbolo de entrada
+					foreach (string transition in transitions)
+					{
+						string[] parts = transition.Split(',');
+						if (parts[0].Trim() == state && parts[1].Trim() == symbol.ToString())
+						{
+							next_states.Add(parts[2].Trim());
+							tb_results.AppendText(transition.Trim() + "\r\n");
+						}
+					}
+				}
+				// Obtener la cerradura epsilon de los siguientes estados, sin registrar las transiciones ε
+				//current_states = epsilon_closure(); FALTA METODO EPSILON
+			}
+
+			// Comprobar si algún estado actual es un estado final
+			foreach (string state in current_states)
+			{
+				if (final_states.Contains(state))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+
+
+
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			// Crear una nueva instancia del segundo formulario
+			Form home = new home();
+
+			// Mostrar el segundo formulario
+			home.Show();
+
+			// Esconder y no cerrar debidio a que es el formulario principal
+			this.Hide();
+		}
+	}
 }
