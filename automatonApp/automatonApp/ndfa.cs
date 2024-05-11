@@ -209,7 +209,7 @@ namespace automatonApp
 		{
 			HashSet<string> current_states = new HashSet<string>();
 			current_states.Add(initial_state);
-			//current_states = epsilon_closure(); FALTA METODO EPSILON
+			current_states = epsilon(current_states, transitions, true);
 
 			// Procesamos cada caracter de la palabra
 			foreach (char symbol in word)
@@ -229,8 +229,8 @@ namespace automatonApp
 					}
 				}
 				// Obtener la cerradura epsilon de los siguientes estados, sin registrar las transiciones ε
-				//current_states = epsilon_closure(); FALTA METODO EPSILON
-			}
+				current_states = epsilon(next_states, transitions, false);			
+            }
 
 			// Comprobar si algún estado actual es un estado final
 			foreach (string state in current_states)
@@ -243,7 +243,37 @@ namespace automatonApp
 			return false;
 		}
 
+		// Función para obtener la cerradura epsilon de un conjunto de estados
+		private HashSet<string> epsilon(HashSet<string> states, List<string> transitions, bool record)
+		{
+			Queue<string> queue = new Queue<string>(states);
+			HashSet<string> closure = new HashSet<string>(states);
 
+			while (queue.Count > 0)
+			{
+				string state = queue.Dequeue();
+				// Buscamos transiciones epsilon desde el estado actual
+				foreach (string transition in transitions)
+				{
+					string[] parts = transition.Split(',');
+					if (parts[0].Trim() == state && parts[1].Trim() == "ε")
+					{
+						string next_state = parts[2].Trim();
+						// Si el estado no está en la cerradura, lo agregamos y lo encolamos para futura exploración
+						if (!closure.Contains(next_state))
+						{
+							closure.Add(next_state);
+							queue.Enqueue(next_state);
+							if (record)
+							{
+								tb_results.AppendText(transition.Trim() + "\r\n");
+							}
+						}
+					}
+				}
+			}
+			return closure;
+		}
 
 
 		private void button1_Click(object sender, EventArgs e)
