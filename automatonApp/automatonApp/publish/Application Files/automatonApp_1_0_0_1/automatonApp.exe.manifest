@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="automatonApp.exe" version="1.0.0.1" publicKeyToken="6c56886efaac794a" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="automatonApp" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="automatonApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="automatonApp.exe" size="22440">
+      <assemblyIdentity name="automatonApp" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aF5UgmS7uoJKf9z10m8om9H25YIy3vt9lW64EWngUzI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="automatonApp.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=JUANDI\juand" issuerKeyHash="741818bfb57d7ffc6f39c07985f31d627aeb7a05" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+11BYKRyt1oa/rUVB6qWni0uM1e7EXNQwD52GkDWZuQ=</DigestValue></Reference></SignedInfo><SignatureValue>bZ+iQ/J4xeiY5gdhr6qhLr3FW7auAfdQvVwTSmf7xS362wyspyfq1Z5qVH2kfMeQBCjoLvt+f1l4DXiOB9f2d6+DUEe1cu4Yr3GM7skZzVUUnhuw+pqpwfNS5g+Ht+7H5Jg9+hc4MhHxwogupt+yFM2f1Jl3SUL9EHs4EMXPJ6M=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tEb0t0Qoj8ZHqjtnBC/5dOtRVWIIk+Q3fclwdzZOInj+Q3GkTHD6/Sl4AAnzWZ8LEDIIsOVjczj/qDUlC/gWrjh4TX+UKav9PDBGv0BJf89JEAIrHQs8eRE4VPYBLqDgrgW4Qm37OXX8guAtbGUzStP2mZg+panCFlGtsQBqjYE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e466d6401a763ec0507311bb57332e2d9e96aa0715b5fe1a5ab772a460415dfb" Description="" Url=""><as:assemblyIdentity name="automatonApp.exe" version="1.0.0.1" publicKeyToken="6c56886efaac794a" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JUANDI\juand</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PGKv/Oyg0SAvqb6DSoNOJtb/E8VQeiACORomaUACzZ8=</DigestValue></Reference></SignedInfo><SignatureValue>X5Yk/jAGd9rKzWVp0dYws88rNPvq3bBqeGzK7GRgn2HLE/O77rklYBeO/D64PEw5QKNuqKhs8/43LG0t7tc8Xn1DU04vMAWtJ0E8eQAnKB6jl5YNCYOBLeR1AcuhQWkS9l//SFKzKmdC2SkgRyO8DM8IdEfe+3RkOd14tpvL7tU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tEb0t0Qoj8ZHqjtnBC/5dOtRVWIIk+Q3fclwdzZOInj+Q3GkTHD6/Sl4AAnzWZ8LEDIIsOVjczj/qDUlC/gWrjh4TX+UKav9PDBGv0BJf89JEAIrHQs8eRE4VPYBLqDgrgW4Qm37OXX8guAtbGUzStP2mZg+panCFlGtsQBqjYE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQHVkwxSrLiohKh27hcSv7FDANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgASgBVAEEATgBEAEkAXABqAHUAYQBuAGQwHhcNMjQwNDEzMTMxNTA2WhcNMjUwNDEzMTkxNTA2WjAjMSEwHwYDVQQDHhgASgBVAEEATgBEAEkAXABqAHUAYQBuAGQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALRG9LdEKI/GR6o7ZwQv+XTrUVViCJPkN33JcHc2TiJ4/kNxpExw+v0peAAJ81mfCxAyCLDlY3M4/6g1JQv4Fq44eE1/lCmr/TwwRr9ASX/PSRACKx0LPHkROFT2AS6g4K4FuEJt+zl1/ILgLWxlM0rT9pmYPqWpwhZRrbEAao2BAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAP0PSahCv32tzz8F5Wi3wDMPp2py0D2Trt2FjcbFWeRZOQZzLhoA+Nq65nkYsDpnPt/SMDNwDxAI+V5BDFjjFO+mvS0HqBpu0ByZDeI611RozKRvg1zZK0Ow4tGzm+d0bdmHpVl6e2LxR7wUvIVXuF/9fbn/hSGJGP1Ep78YCMZ0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
